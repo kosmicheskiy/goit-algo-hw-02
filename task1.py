@@ -24,9 +24,8 @@ def process_request():
 
 
 while True:
-    generate_request()
-    process_request()
-
-        
-
-
+    try:
+        generate_request()
+        process_request()
+    except KeyboardInterrupt:
+        break       
